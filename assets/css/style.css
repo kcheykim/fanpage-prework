@@ -1,0 +1,68 @@
+
+body {
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: blue;
+    padding: 20px;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    color: greenyellow;
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: greenyellow;
+}
+
+header nav {
+    float: right;
+    margin: 30px 5px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 10px 15px;
+    
+}
+
+.hero {
+    background-image: url(../images/ocean.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-cta {
+    line-height: 1.2;
+    width: 100;
+    text-align: left;
+    float: left;
+    color: black;
+}
+.picture {
+    text-align: right;
+}
+
+.inspiration {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quote {
+    font-size: 15px;
+    font-style: italic;
+}
+.hero h2 {
+    font-size: 30px;
+}
+.myportfolio {
+    color: white;
+}
