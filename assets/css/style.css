@@ -1,68 +1,147 @@
 
+*{
+    box-sizing: border-box;
+   /* padding: 0;
+    margin: 0; */
+}
+
 body {
     font-family: Helvetica, Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 header {
     background-color: blue;
-    padding: 20px;
+    padding: 20px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url(../images/ocean.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
-    font-weight: bolder;
-    font-size: 50px;
-    color: greenyellow;
+    font-weight: bold;
+    font-size: 36px;
+    color: red;
     margin: 0;
-    display: inline;
 }
 
 header a {
     text-decoration: none;
-    font-weight: bolder;
-    color: greenyellow;
+    color: red;
 }
 
 header nav {
-    float: right;
-    margin: 30px 5px;
+    margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 10px 15px;
-    
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
+
+header nav ul li a {
+    margin: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+.inspiration {
+    width: 60%;
+
+}
+.picture {
+    padding: 50px;
+    display: block;
+    text-align: right;
+    width: 40;
+}
+
 
 .hero {
     background-image: url(../images/ocean.jpg);
-    height: 600px;
+    height: cover;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    background-position: 80%;
+    background-position: fixed;
 }
 
 .hero-cta {
     line-height: 1.2;
-    width: 100;
-    text-align: left;
-    float: left;
+    width: 60%;
     color: black;
-}
-.picture {
-    text-align: right;
+    margin: 3.5%;
+    font-size: 18px;
 }
 
-.inspiration {
+.hero-cta h2 {
     font-size: 30px;
     font-weight: bold;
+    align-items: left;
 }
 
-.quote {
+.hero-cta h3 {
     font-size: 15px;
     font-style: italic;
+    align-items: left;
 }
-.hero h2 {
-    font-size: 30px;
+
+.picture img {
+    justify-content: space-around;
 }
+
+.title {
+    float: left;
+    border-right: 3px solid purple;
+    height: 20px;
+    width: 10%;
+}
+
+.description p {
+    display: block;
+    padding: 20px;
+    width: 80%;
+}
+
 .myportfolio {
-    color: white;
+    color: black;
 }
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  .card header {
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  .card img {
+    width: 10%;
+    /* The client insists that images be at least 400px */
+  }
+
+.flex-row {
+    display: flex;
+}
+
