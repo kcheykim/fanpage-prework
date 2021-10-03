@@ -15,3 +15,9 @@ The purpose of this assignment is to be introduce to html by creating a Fan Page
 * Adopting CSS styles into this assignment.
 
 ## Website
+
+https://kcheykim.github.io/fanpage-prework/
+
+## Image of Website 
+
+![Celine](./assets/css/celine-fanpage.png?raw=true)
