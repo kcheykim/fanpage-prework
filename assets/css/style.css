@@ -4,42 +4,30 @@
 
 body {
     font-family: Helvetica, Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: yellow;
+    background-color: yellowgreen;
+    color: black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between
 }
 
 header {
-    background-color: blue;
+    background-color: blueviolet;
     padding: 20px 35px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background-image: url(../images/field.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
-    color: red;
+    font-size: 52px;
     margin: 0;
 }
 
-header a {
-    text-decoration: none;
-    color: red;
-}
-
 header nav {
-    margin: 7px 0;
+    margin: 10px 5px;
 }
 
 header nav ul {
@@ -52,130 +40,51 @@ header nav ul {
 
 header nav ul li a {
     margin: 10px 15px;
-    font-weight: lighter;
     font-size: 1.55vw;
+    text-decoration: none;
+    color: black;
 }
 
-.hero {
-    background-image: url(../images/field.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-position: 80%;
-    background-attachment: fixed;
+#bio h2, 
+#album h2, 
+#video h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    justify-content: stretch;
 }
-
-.hero-cta {
-    line-height: 1.2;
-    width: 45%;
-    color: yellow;
-    margin: 3.5%;
-    font-size: 18px;
-}
-
-.hero-cta h2 {
-    font-size: 30px;
-    font-weight: bold;
-    align-items: left;
-}
-
-.hero-cta h3 {
-    font-size: 15px;
-    font-style: italic;
-    align-items: left;
-}
-
-.picture {
-    text-align: right;
-    width: 25%;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: right;
-}
-
-.title {
-    display: flex;
-}
-.section-title {
-    font-size: 36px;
-    color: green;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto; 
-    width: 250px;
-}
-
-
-#about-me, #work, #contact-me, #resume {
-    display: flex;
-}
-
-#about-me p,
-#contact-me p,
-#resume p {
-    line-height: 2;
-    color: yellow;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    border-left: 3px solid red;
-}
-
-.photo-display {
-    border-left: 3px solid red;
-    padding: 50px;
-}
-.photo{
-    display: inline-block;
-}
-
-.photo img{
+.content {
+    width:100%;
     padding: 20px;
-    width: 300px;
-    height: 225px;
-  }
-
-  .photo-display h4 {
-      text-align: center;
-  }
-
-  .flex-row {
     display: flex;
+    justify-content: space-between;
 }
 
-.launchApp{
-    transform: transform .3s;
+#bio img,
+#album img,
+#video img {
+    padding: 10px;
+    border: 5px solid navy;
+    margin: 0;
+    max-width: max-content;
 }
 
-.launchApp:hover {
-    transform: scale(2);
+#bio p,
+#album p,
+#video p {
+    line-height: 2;
+    font-size: 24px;
+    padding-left: 20px;
 }
+
 
 footer {
-    background: green;
+    background: blueviolet;
     width: 100%;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-/* apply style to the left <h2> of the footer */
-footer h4 {
-    color: white;
-    font-size: 30px;
-    margin: 0;
-}
-
-/* apply style to the right <div> of the footer */
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-
 
 
 /* Media Query */
@@ -211,8 +120,9 @@ footer div {
         width: 100%;
     }
     
-    .section-title {
-        width: 80%;
+    #bio h2, #album h2, #video h2{
+        width: 200px;
+        justify-content: stretch;
     }
 }
   
@@ -221,15 +131,18 @@ footer div {
     section {
         padding: 30px 15px;
         text-align: center;
+        }
+
+    #bio h2, #album h2, #video h2 {
         flex: 1 100%;
+        width: 100%;
     }
 
-    .picture {
-        flex: 1;
+    #bio img, #album img, #video img {
+        flex: 2 80%;
     }
-
-    .card {
-        flex: 0 0 32%;
+    #bio p, #album p, #video p {
+        flex: 0 0 30%;
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
